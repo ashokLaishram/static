@@ -1,11 +1,10 @@
 ### **1️⃣ Open the HTML File Directly**
-Your colleague can:
-- Clone the Git repo
+- Clone the Git repo (or click on 'Code' button > 'Download zip')
 - **Double-click `index.html`** (it will open in their browser)
-- Since the video is referenced locally (`video.mp4`), it should play **without a server**  
+- Since the video is referenced locally (`video.mov`), it should play **without a server**  
 
 **📌 Caveat:**  
-Some browsers (especially Chrome) may block `video.mp4` due to **local file access restrictions** (CORS issues). If that happens, use **Method 2**.
+Some browsers (especially Chrome) may block `video.mov` due to **local file access restrictions** (CORS issues). If that happens, use **Method 2**.
 
 ---
 
@@ -13,11 +12,11 @@ Some browsers (especially Chrome) may block `video.mp4` due to **local file acce
 You can embed the video directly into `index.html` using **Base64 encoding** so that it works **without separate video files**.
 
 #### **🔹 Steps:**
-1. Convert `video.mp4` to Base64:
+1. Convert `video.mov` to Base64:
    - Use an online converter: [https://www.base64-image.de/](https://www.base64-image.de/)
    - Use `base64` in Linux/macOS:
      ```bash
-     base64 video.mp4 > video.txt
+     base64 video.mov > video.txt
      ```
 2. Embed it in `index.html` like this:
    ```html
@@ -47,7 +46,7 @@ If your project is public on GitHub, you can host it for free using **GitHub Pag
 ---
 
 ### **4️⃣ Use a Simple Local Server (For Large Videos)**
-If `video.mp4` is large, your colleague can:
+If `video.mov` is large, your colleague can:
 1. Clone the repo
 2. Run this in their project folder (Windows Command Prompt or PowerShell):
    ```sh
